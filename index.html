@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ingeniería de Requisitos</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Ingeniería de Requisitos</h1>
+    <p>informativa</p>
+  </header>
+
+  <nav>
+    <a href="#tema1">Introducción</a>
+    <a href="#tema2">Tipos de Requisitos</a>
+    <a href="#tema3">Proceso</a>
+    <a href="#tema4">Documentación</a>
+    <a href="#resumen">Resumen</a>
+  </nav>
+
+  <div class="contenido">
+
+    <div class="intro">
+      La <strong>Ingeniería de Requisitos</strong> es la disciplina encargada de identificar,
+      analizar, documentar, validar y gestionar los requisitos de un sistema de software.
+      Esta guía cubre los temas del 1 al 4 con definiciones claras y ejemplos prácticos.
+    </div>
+
+    
+    <div class="tema" id="tema1">
+      <h2>Tema 1 — Introducción a la Ingeniería de Requisitos</h2>
+
+      <div class="subtema">
+        <h3>¿Qué es un requisito?</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Es una necesidad, condición o capacidad que debe
+          cumplir un sistema para satisfacer las necesidades de los usuarios o del negocio.
+        </div>
+        <div class="ejemplo-titulo">Ejemplo</div>
+        <div class="ejemplo">
+          Una tienda virtual necesita que sus clientes puedan comprar en línea.<br/><br/>
+          <span class="etiqueta">Requisito</span> El sistema debe permitir registrar pedidos de compra.
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>¿Qué es la Ingeniería de Requisitos?</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Es la disciplina encargada de identificar, analizar,
+          documentar, validar y gestionar los requisitos de un sistema de software.
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Objetivos</h3>
+        <div class="ejemplo-titulo">Ejemplo — Objetivos principales</div>
+        <div class="ejemplo">
+          <ul>
+            <li>Comprender las necesidades del cliente.</li>
+            <li>Evitar errores durante el desarrollo.</li>
+            <li>Reducir costos y retrabajos.</li>
+            <li>Garantizar que el software cumpla los objetivos del negocio.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Importancia de los requisitos</h3>
+        <div class="definicion">
+          Un mal manejo de los requisitos puede causar:
+        </div>
+        <div class="ejemplo-titulo">Consecuencias</div>
+        <div class="ejemplo">
+          <ul>
+            <li>Retrasos en la entrega del proyecto.</li>
+            <li>Incremento de costos.</li>
+            <li>Insatisfacción del cliente.</li>
+            <li>Fallas en el sistema.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Características de un buen requisito</h3>
+        <div class="ejemplo-titulo">Ejemplo</div>
+        <div class="ejemplo">
+          <table>
+            <tr><th>Característica</th><th>Significado</th></tr>
+            <tr><td>Claro</td><td>No da lugar a interpretaciones distintas.</td></tr>
+            <tr><td>Completo</td><td>Contiene toda la información necesaria.</td></tr>
+            <tr><td>Consistente</td><td>No contradice a otros requisitos.</td></tr>
+            <tr><td>Verificable</td><td>Se puede comprobar si se cumplió o no.</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="tema" id="tema2">
+      <h2>Tema 2 — Tipos de Requisitos</h2>
+
+      <div class="subtema">
+        <h3>Requisitos de Negocio</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Describen los objetivos de la organización.
+        </div>
+        <div class="ejemplo-titulo">Ejemplo</div>
+        <div class="ejemplo">
+          <span class="etiqueta">RN-01</span> Aumentar las ventas en línea en un 30%.
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Requisitos de Usuario</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Describen lo que los usuarios necesitan realizar con el sistema.
+        </div>
+        <div class="ejemplo-titulo">Ejemplo</div>
+        <div class="ejemplo">
+          <span class="etiqueta">RU-01</span> El cliente debe poder consultar el estado de su pedido.
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Requisitos Funcionales</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Describen las funciones específicas que el sistema debe realizar.
+        </div>
+        <div class="ejemplo-titulo">Ejemplos</div>
+        <div class="ejemplo">
+          <ul>
+            <li><span class="etiqueta">RF-01</span> Registrar usuarios.</li>
+            <li><span class="etiqueta">RF-02</span> Generar reportes.</li>
+            <li><span class="etiqueta">RF-03</span> Procesar pagos.</li>
+            <li><span class="etiqueta">RF-04</span> Consultar inventario.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Requisitos No Funcionales</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Describen cómo debe funcionar el sistema, no qué hace.
+        </div>
+        <div class="ejemplo-titulo">Ejemplos</div>
+        <div class="ejemplo">
+          <table>
+            <tr><th>Categoría</th><th>Ejemplo</th></tr>
+            <tr><td>Rendimiento</td><td>El sistema debe responder en menos de 2 segundos.</td></tr>
+            <tr><td>Seguridad</td><td>Las contraseñas deben estar cifradas.</td></tr>
+            <tr><td>Disponibilidad</td><td>El sistema debe estar disponible el 99.9% del tiempo.</td></tr>
+            <tr><td>Usabilidad</td><td>La interfaz debe ser fácil de usar para personas mayores.</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Restricciones</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Limitan la forma en que se puede desarrollar el sistema.
+        </div>
+        <div class="ejemplo-titulo">Ejemplos</div>
+        <div class="ejemplo">
+          <ul>
+            <li><span class="etiqueta">REST-01</span> Utilizar MySQL como base de datos.</li>
+            <li><span class="etiqueta">REST-02</span> Desarrollar la aplicación en Java.</li>
+            <li><span class="etiqueta">REST-03</span> Cumplir con la Ley de Protección de Datos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="tema" id="tema3">
+      <h2>Tema 3 — Proceso de Ingeniería de Requisitos</h2>
+
+      <div class="subtema">
+        <h3>1. Elicitación de Requisitos</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Recopilar información de los interesados (clientes, usuarios, expertos).
+        </div>
+        <div class="ejemplo-titulo">Técnicas utilizadas</div>
+        <div class="ejemplo">
+          <ul>
+            <li><span class="etiqueta">Entrevistas</span> Conversaciones directas con el cliente.</li>
+            <li><span class="etiqueta">Encuestas</span> Formularios para recopilar opiniones masivas.</li>
+            <li><span class="etiqueta">Observación</span> Ver cómo trabaja el usuario en su entorno.</li>
+            <li><span class="etiqueta">Talleres</span> Sesiones grupales para llegar a acuerdos.</li>
+            <li><span class="etiqueta">Prototipos</span> Mostrar bocetos para que el cliente valide ideas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>2. Análisis de Requisitos</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Estudiar y organizar los requisitos obtenidos para detectar
+          conflictos, ambigüedades o requisitos incompletos.
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>3. Especificación de Requisitos</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Documentar formalmente los requisitos en un documento oficial
+          que sirva de referencia para todo el equipo.
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>4. Validación de Requisitos</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Verificar que los requisitos documentados sean correctos,
+          completos y aceptados por el cliente antes de comenzar el desarrollo.
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>5. Gestión de Requisitos</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Controlar los cambios en los requisitos durante todo el ciclo
+          de vida del proyecto.
+        </div>
+        <div class="ejemplo-titulo">Ejemplo — Proceso completo en una app de delivery</div>
+        <div class="ejemplo">
+          <ul>
+            <li><span class="etiqueta">1. Elicitación</span> Entrevistar al dueño: ¿Qué necesita la app?</li>
+            <li><span class="etiqueta">2. Análisis</span> Revisar si los requisitos son viables y sin contradicciones.</li>
+            <li><span class="etiqueta">3. Especificación</span> Escribir el documento SRS con todos los requisitos.</li>
+            <li><span class="etiqueta">4. Validación</span> El cliente revisa y aprueba antes de programar.</li>
+            <li><span class="etiqueta">5. Gestión</span> Si el cliente pide un cambio, se registra y evalúa su impacto.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="tema" id="tema4">
+      <h2>Tema 4 — Documentación y Especificación de Requisitos</h2>
+
+      <div class="subtema">
+        <h3>Documento SRS (Software Requirements Specification)</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Es el documento oficial que contiene todos los requisitos del
+          sistema. Sirve como contrato entre el cliente y el equipo de desarrollo.
+        </div>
+        <div class="ejemplo-titulo">Estructura básica de un SRS</div>
+        <div class="ejemplo">
+          <ul>
+            <li><span class="etiqueta">1</span> Introducción</li>
+            <li><span class="etiqueta">2</span> Objetivos</li>
+            <li><span class="etiqueta">3</span> Alcance</li>
+            <li><span class="etiqueta">4</span> Requisitos Funcionales</li>
+            <li><span class="etiqueta">5</span> Requisitos No Funcionales</li>
+            <li><span class="etiqueta">6</span> Restricciones</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Casos de Uso</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Representan las interacciones entre los usuarios y el sistema.
+          Describen qué hace el usuario y cómo responde el sistema.
+        </div>
+        <div class="ejemplo-titulo">Ejemplo — Caso de uso: Consultar pedido</div>
+        <div class="ejemplo">
+          <table>
+            <tr><th>Campo</th><th>Descripción</th></tr>
+            <tr><td>Actor</td><td>Cliente</td></tr>
+            <tr><td>Acción</td><td>El cliente ingresa su número de pedido.</td></tr>
+            <tr><td>Respuesta del sistema</td><td>El sistema muestra el estado actual del pedido.</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="subtema">
+        <h3>Historia de Usuario</h3>
+        <div class="definicion">
+          <strong>Definición:</strong> Formato ágil para describir un requisito desde la perspectiva
+          del usuario. Sigue la estructura:<br/>
+          <em>Como [usuario], quiero [acción], para [beneficio].</em>
+        </div>
+        <div class="ejemplo-titulo">Ejemplo</div>
+        <div class="ejemplo">
+          <span class="etiqueta">HU-01</span>
+          Como <strong>cliente</strong>, quiero <strong>consultar mis pedidos</strong>,
+          para <strong>conocer el estado de mis compras</strong>.
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="tema" id="resumen">
+      <h2>Resumen General</h2>
+      <div class="ejemplo-titulo">Conceptos clave</div>
+      <div class="ejemplo">
+        <table>
+          <tr><th>Concepto</th><th>Definición corta</th></tr>
+          <tr><td>Requisito</td><td>Necesidad que debe cumplir el sistema.</td></tr>
+          <tr><td>Ingeniería de Requisitos</td><td>Proceso para descubrir, analizar, documentar y gestionar requisitos.</td></tr>
+          <tr><td>Requisito Funcional</td><td>Qué hace el sistema.</td></tr>
+          <tr><td>Requisito No Funcional</td><td>Cómo se comporta el sistema.</td></tr>
+          <tr><td>Elicitación</td><td>Obtención de requisitos.</td></tr>
+          <tr><td>Análisis</td><td>Organización y evaluación de requisitos.</td></tr>
+          <tr><td>Especificación</td><td>Documentación formal.</td></tr>
+          <tr><td>Validación</td><td>Verificación con el cliente.</td></tr>
+          <tr><td>Gestión</td><td>Control de cambios.</td></tr>
+          <tr><td>SRS</td><td>Documento de especificación de requisitos.</td></tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+     · Ingeniería de Requisitos · 
+  </footer>
+
+</body>
+</html>
